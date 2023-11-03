@@ -13,4 +13,149 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--primary-font);
 }
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: var(--dark-cyan);
+    position: relative;
+}
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    /*z-index: 2;*/
+}
+main .img-wrapper .top-img {
+    position: absolute;
+    left: -345px;
+    top: -345px;
+    z-index: 1;
+}
+
+main .img-wrapper .bottom-img {
+    position: absolute;
+    right: -343px;
+    bottom: -529px;
+    z-index: 1;
+}
+main .card {
+    height: 560px;
+    width: 520px;
+    background-color: white;
+    z-index: 2;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+}
+
+.card .grid-container {
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    align-items: center;
+
+}
+
+.card .card-top .img-wrapper {
+    width: 520px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.card .card-top .img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.card .card-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.card .card-bottom .profile-img {
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    top: -85px;
+
+}
+.card .card-bottom .profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 10px solid white;
+}
+
+.card .card-bottom .profile-details {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-bottom .profile-details .name {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--very-dark-des-blue);
+    margin-bottom: 10px;
+}
+
+.card-bottom .profile-details .name span {
+    font-weight: 400;
+    font-size: 1.8rem;
+    margin-left: 12px;
+    color: var(--dark-grayish-blue);
+}
+
+.card-bottom .profile-details .address {
+    font-size: 1.3rem;
+    color: var(--neutral-dark-gray);
+    margin-bottom: 20px;
+}
+.card-bottom .line {
+    width: 520px;
+    height: 1px;
+    background-color: var(--neutral-dark-gray);
+    margin: 20px 0;
+}
+
+.card .card-bottom .profile-stats {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card-bottom .profile-stats .followers,
+.card-bottom .profile-stats .likes,
+.card-bottom .profile-stats .photos
+{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    margin-top: 10px;
+}
+.card-bottom .profile-stats h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--very-dark-des-blue);
+}
+.card-bottom .profile-stats .followers p,
+.card-bottom .profile-stats .likes p,
+.card-bottom .profile-stats .photos p
+{
+
+    color: var(--dark-grayish-blue);
+}
+
