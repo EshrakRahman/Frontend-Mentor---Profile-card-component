@@ -159,3 +159,67 @@ main .card {
     color: var(--dark-grayish-blue);
 }
 
+/* Responsive design */
+
+@media  screen and (max-width: 375px) {
+
+
+
+    main .img-wrapper .top-img {
+        left: -245px;
+        top: -208px;
+        width: 500px;
+        height: auto;
+    }
+
+    main .img-wrapper .bottom-img {
+        right: -253px;
+        bottom: -258px;
+        width: 500px;
+        height: auto;
+    }
+
+    main .card {
+        width: 330px;
+        height: 530px;
+    }
+
+    .card .card-top .img-wrapper {
+        width: 330px;
+    }
+
+    .card .card-bottom .profile-img {
+        width: 130px;
+        height: 130px;
+        top: -59px;
+    }
+
+    .card .card-bottom .profile-details {
+        margin-top: 90px;
+    }
+
+    .card-bottom .profile-details .name {
+        font-size: 1.5rem;
+    }
+
+    .card-bottom .profile-details .name span {
+        font-size: 1.5rem;
+    }
+    .card-bottom .profile-details .address {
+        font-size: 1.2rem;
+    }
+
+    .card-bottom .line {
+        width: 330px;
+    }
+
+    .card-bottom .profile-stats h2 {
+        font-size: 1.5rem;
+    }
+
+    .card-bottom .profile-stats .followers p,
+    .card-bottom .profile-stats .likes p,
+    .card-bottom .profile-stats .photos p {
+        font-size: 1rem;
+    }
+}
