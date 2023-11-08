@@ -30,7 +30,6 @@ body {
     width: 100%;
     height: 1080px;
     overflow: hidden;
-    /*z-index: 2;*/
 }
 main .img-wrapper .top-img {
     position: absolute;
