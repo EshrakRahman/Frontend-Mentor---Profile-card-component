@@ -18,16 +18,18 @@
 
 body {
     width: 100vw;
-    height: 100vh;
+    height: 1080px;
     background: var(--dark-cyan);
     position: relative;
+    overflow: hidden;
 }
 #main {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    height: 1080px;
+    overflow: hidden;
     /*z-index: 2;*/
 }
 main .img-wrapper .top-img {
@@ -162,8 +164,17 @@ main .card {
 /* Responsive design */
 
 @media  screen and (max-width: 375px) {
-
-
+    html {
+        overflow: hidden;
+    }
+    body {
+        width: 375px;
+        height: 667px;
+    }
+    #main {
+        width: 375px;
+        height: 667px;
+    }
 
     main .img-wrapper .top-img {
         left: -245px;
